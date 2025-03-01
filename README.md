@@ -1,1 +1,28 @@
-# NNDL_Project
+# LSTM Time Series - Multivariate Stock Price Prediction 💹
+This project implements a time series multivariate analysis using RNN/LSTM for stock price predictions. A deep RNN model was created and trained on five years of historical Google stock price data to forecast the stock performance over a two-month period.
+
+## Data Set 📥([Google Stock Price](https://finance.yahoo.com/quote/GOOG/history))
+The dataset utilized comprises historical records for the stock price of [Alphabet Inc. (GOOG)](https://finance.yahoo.com/quote/GOOG/history), captured on daily basis.
+
+The dataset is sourced from [Yahoo Finance](https://finance.yahoo.com/) and contains the following fields: *Opening price, Highest price, Lowest price, Closing price, Adjusted closing price, and Trading volume*.
+
+
+## 🛠️ Tech Stack
+- **Python** 🐍  
+- **TensorFlow/Keras** 🔥
+- **LSTM**
+- **NumPy & Pandas** 📊  
+- **Matplotlib & Seaborn** 📉  
+
+
+## Development Team
+- `Aakaash M S`
+- `Karthik Ram S`
+- `Aniketha Prasad`
+- `Riya Rajesh`
+
+## 🤝 Contributing  
+Contributions are welcome! Feel free to fork the repository, work on new features, and submit pull requests.  
+
+## 📝 License  
+This project is licensed under the MIT License. 
