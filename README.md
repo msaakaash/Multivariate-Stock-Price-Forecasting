@@ -1,4 +1,4 @@
-# LSTM Time Series - Multivariate Stock Price Prediction 💹
+# Multivariate Stock Price Prediction 💹 - LSTM
 This project implements a time series multivariate analysis using RNN/LSTM for stock price predictions. A deep RNN model was created and trained on five years of historical Google stock price data to forecast the stock performance over a two-month period.
 
 ## Data Set 📥([Google Stock Price](https://finance.yahoo.com/quote/GOOG/history))
