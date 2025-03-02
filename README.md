@@ -1,4 +1,4 @@
-# Multivariate Stock Price Prediction 💹 - LSTM
+#  💹 Multivariate Stock Price Prediction - LSTM
 This project implements a time series multivariate analysis using RNN/LSTM for stock price predictions. A deep RNN model was created and trained on five years of historical Google stock price data to forecast the stock performance over a two-month period.
 
 ## Data Set 📥([Google Stock Price](https://finance.yahoo.com/quote/GOOG/history))
@@ -6,7 +6,23 @@ The dataset utilized comprises historical records for the stock price of [Alphab
 
 The dataset is sourced from [Yahoo Finance](https://finance.yahoo.com/) and contains the following fields: *Opening price, Highest price, Lowest price, Closing price, Adjusted closing price, and Trading volume*.
 
+The raw, interim, and preprocessed datasets can be located in their corresponding subfolders in the main data directory.
 
+## 📂 Repository Structure
+```
+💹 Multivariate Stock Price Prediction
+├── 📂data
+│   ├──📂interim
+|   │   ├──google_stock_price_recent.csv
+│   ├──📂 processed
+|   │   ├──google_stock_price_processed_test.csv
+|   │   ├──google_stock_price_processed_train.csv
+|   │   ├──google_stock_price_processed_validate.csv
+│   ├──📂 raw
+|   │   ├──google_stock_price_full.csv
+├── README.md
+
+```
 ## 🛠️ Tech Stack
 - **Python** 🐍  
 - **TensorFlow/Keras** 🔥
