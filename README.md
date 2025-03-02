@@ -12,7 +12,19 @@ The dataset is sourced from [Yahoo Finance](https://finance.yahoo.com/) and cont
 - **TensorFlow/Keras** 🔥
 - **LSTM**
 - **NumPy & Pandas** 📊  
-- **Matplotlib & Seaborn** 📉  
+- **Matplotlib & Seaborn** 📉
+- **Hugging Face**🤗
+
+
+## 📌 Features
+| Topic | Description |
+|-------------------------------|------------------------------------------------|
+| **Multivariate Analysis** | Uses multiple stock features (Open, High, Low, Close, Adjusted Close, Volume) for robust predictions. |
+| **LSTM-based Approach** | Leverages RNN/LSTM to model sequential dependencies in stock price data. |
+| **Explainability (SHAP)** | Analyzes feature importance to interpret model decisions. |
+| **Visualization (TensorBoard)** | Monitors training performance and helps in debugging. |
+| **Deployment (TF Serving)** | Provides a scalable and production-ready model hosting solution. |
+| **NLP Integration (FinBERT)** | Enhances predictions by incorporating financial sentiment analysis. |
 
 
 ## Development Team
