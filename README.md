@@ -18,15 +18,15 @@ The raw, interim, and preprocessed datasets can be located in their correspondin
 ## 📂 Repository Structure
 ```
 💹 Multivariate Stock Price Prediction
+├── 📂assets
+│   ├──architecture.png
 ├── 📂data
 │   ├──📂interim
 |   │   ├──google_stock_price_recent.csv
-│   ├──📂 processed
-|   │   ├──google_stock_price_processed_test.csv
-|   │   ├──google_stock_price_processed_train.csv
-|   │   ├──google_stock_price_processed_validate.csv
 │   ├──📂 raw
 |   │   ├──google_stock_price_full.csv
+├── 📂notebooks
+│   ├──stockMarketForecasting.ipynb
 ├── README.md
 
 ```
