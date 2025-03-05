@@ -8,6 +8,12 @@ The dataset is sourced from [Yahoo Finance](https://finance.yahoo.com/) and cont
 
 The raw, interim, and preprocessed datasets can be located in their corresponding subfolders in the main data directory.
 
+## 🛠️ Architectural Diagram  
+The following diagram represents the architecture of the stock price prediction model:  
+
+![LSTM Architecture Diagram](assets/architecture.png)
+
+
 ## 📂 Repository Structure
 ```
 💹 Multivariate Stock Price Prediction
@@ -23,6 +29,7 @@ The raw, interim, and preprocessed datasets can be located in their correspondin
 ├── README.md
 
 ```
+
 ## 🛠️ Tech Stack
 - **Python** 🐍  
 - **TensorFlow/Keras** 🔥
