@@ -11,7 +11,19 @@ This project implements a time series multivariate analysis using RNN/LSTM for s
 | **Deployment (TF Serving)** | Provides a scalable and production-ready model hosting solution. |
 | **NLP Integration (FinBERT)** | Enhances predictions by incorporating financial sentiment analysis. |
 
-## 🌏Potential Impact and Applications
+
+## ⚒️ Project Workflow
+
+| Phase | Tasks | Milestone |
+|-------|-------|-----------|
+| **Phase 1: Data Collection & Preprocessing** | - Collect stock data (Yahoo Finance) <br> - Clean, normalize & split data <br> - Perform feature engineering | Dataset is preprocessed and ready for training |
+| **Phase 2: Model Development (LSTM)** | - Implement LSTM model <br> - Fine-Tuning hyperparameters <br> - Train on historical stock data | Trained LSTM model with initial performance metrics |
+| **Phase 3: Inference, Explainability & Visualization** | - Model Inference <br> - Apply SHAP for feature importance <br> - Integrate TensorBoard for monitoring | Insights from SHAP and TensorBoard |
+| **Phase 4: Deployment & Optimization** | - Deploy model using TensorFlow Serving <br> - Optimize for latency (quantization, batching) | Hosting model with API endpoints |
+| **Phase 5: NLP Integration (FinBERT)** | - Process financial news data <br> - Use FinBERT to add sentiment scores <br> - Retrain model with sentiment-enhanced features | Improved predictions with sentiment analysis |
+
+
+## 🌏 Potential Impact and Applications
 
 - **Investment Strategy Enhancement**: Empowers investors and financial analysts with AI-driven insights to optimize stock market decision-making.  
 - **Advanced Risk Management in Trading**: Enables proactive identification of market trends and potential fluctuations, minimizing financial risks.  
@@ -50,18 +62,17 @@ The raw, interim, and preprocessed datasets can be located in their correspondin
 
 ```
 
-##  👨🏾‍💻Tech Stack
+## 👨🏾‍💻 Tech Stack
 - **Python** 🐍  
 - **TensorFlow/Keras** 🔥
 - **LSTM**
-- **NumPy & Pandas** 📊  
-- **Matplotlib & Seaborn** 📉
-- **Hugging Face**🤗
+- **NumPy & Pandas** 📊
+- **TensorBoard**
+- **Matplotlib** 📉
+- **Hugging Face (FinBERT)**🤗
 
 
-
-
-## Development Team
+## 👥Development Team
 - `Aakaash M S`
 - `Karthik Ram S`
 - `Aniketha Prasad`
