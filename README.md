@@ -1,6 +1,25 @@
 #  💹 Multivariate Stock Price Prediction - LSTM
 This project implements a time series multivariate analysis using RNN/LSTM for stock price predictions. A deep RNN model was created and trained on five years of historical Google stock price data to forecast the stock performance over a two-month period.
 
+## 📌 Features
+| Topic | Description |
+|-------------------------------|------------------------------------------------|
+| **Multivariate Analysis** | Uses multiple stock features (Open, High, Low, Close, Adjusted Close, Volume) for robust predictions. |
+| **LSTM-based Approach** | Leverages RNN/LSTM to model sequential dependencies in stock price data. |
+| **Explainability (SHAP)** | Analyzes feature importance to interpret model decisions. |
+| **Visualization (TensorBoard)** | Monitors training performance and helps in debugging. |
+| **Deployment (TF Serving)** | Provides a scalable and production-ready model hosting solution. |
+| **NLP Integration (FinBERT)** | Enhances predictions by incorporating financial sentiment analysis. |
+
+## 🌏Potential Impact and Applications
+
+- **Investment Strategy Enhancement**: Empowers investors and financial analysts with AI-driven insights to optimize stock market decision-making.  
+- **Advanced Risk Management in Trading**: Enables proactive identification of market trends and potential fluctuations, minimizing financial risks.  
+- **Scalable & Production-Ready Deployment**: Easily deployable as a REST API for real-time, high-performance stock price prediction applications.  
+
+
+
+
 ## 🛠️ Architectural Diagram  
 The following diagram represents the architecture of the stock price prediction model:  
 
@@ -40,15 +59,6 @@ The raw, interim, and preprocessed datasets can be located in their correspondin
 - **Hugging Face**🤗
 
 
-## 📌 Features
-| Topic | Description |
-|-------------------------------|------------------------------------------------|
-| **Multivariate Analysis** | Uses multiple stock features (Open, High, Low, Close, Adjusted Close, Volume) for robust predictions. |
-| **LSTM-based Approach** | Leverages RNN/LSTM to model sequential dependencies in stock price data. |
-| **Explainability (SHAP)** | Analyzes feature importance to interpret model decisions. |
-| **Visualization (TensorBoard)** | Monitors training performance and helps in debugging. |
-| **Deployment (TF Serving)** | Provides a scalable and production-ready model hosting solution. |
-| **NLP Integration (FinBERT)** | Enhances predictions by incorporating financial sentiment analysis. |
 
 
 ## Development Team
