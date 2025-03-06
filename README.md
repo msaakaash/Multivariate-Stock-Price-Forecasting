@@ -69,7 +69,7 @@ The raw, interim, and preprocessed datasets can be located in their correspondin
 - **NumPy & Pandas** 📊
 - **TensorBoard**
 - **Matplotlib** 📉
-- **Hugging Face (FinBERT)**🤗
+- **FinBERT - Hugging Face**🤗
 
 
 ## 👥Development Team
