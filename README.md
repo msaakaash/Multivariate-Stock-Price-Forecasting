@@ -12,16 +12,6 @@ This project implements a time series multivariate analysis using RNN/LSTM for s
 | **NLP Integration (FinBERT)** | Enhances predictions by incorporating financial sentiment analysis. |
 
 
-## ⚒️ Project Workflow
-
-| Phase | Tasks | Milestone |
-|-------|-------|-----------|
-| **Phase 1: Data Collection & Preprocessing** | - Collect stock data (Yahoo Finance) <br> - Clean, normalize & split data <br> - Perform feature engineering | Dataset is preprocessed and ready for training |
-| **Phase 2: Model Development (LSTM)** | - Implement LSTM model <br> - Fine-Tuning hyperparameters <br> - Train on historical stock data | Trained LSTM model with initial performance metrics |
-| **Phase 3: Inference, Explainability & Visualization** | - Model Inference <br> - Apply SHAP for feature importance <br> - Integrate TensorBoard for monitoring | Insights from SHAP and TensorBoard |
-| **Phase 4: Deployment & Optimization** | - Deploy model using TensorFlow Serving <br> - Optimize for latency (quantization, batching) | Hosting model with API endpoints |
-| **Phase 5: NLP Integration (FinBERT)** | - Process financial news data <br> - Use FinBERT to add sentiment scores <br> - Retrain model with sentiment-enhanced features | Improved predictions with sentiment analysis |
-
 
 ## 🌏 Potential Impact and Applications
 
@@ -74,6 +64,48 @@ The raw, interim, and preprocessed datasets can be located in their correspondin
 - **TensorBoard**
 - **Matplotlib** 📉
 - **FinBERT - Hugging Face**🤗
+
+## ⚒️ Project Workflow
+### PHASE 1 - Explanatory Data Analysis
+
+Implemented data exploration tasks:
+1. Download and load the raw dataset file.
+2. Explore dataset summary and statistics.
+3. Perform initial data cleaning and type validation.
+4. Analyze the stock performance data over time.
+5. Select a specific period for analysis and filter data accordingly.
+6. Store filtered dataset file to a local folder.
+
+
+### PHASE 2 - Data Preprocessing
+
+Implemented data processing and transformation tasks:
+1. Load the filtered dataset file.
+2. Validate and correct data types.
+3. Select independent and target features.
+4. Create training, validation, and testing splits.
+5. Scale datasets to a [0,1] range using [MinMaxScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html).
+6. Store processed data files (train, validate, test) to a local folder.
+
+### PHASE 3 - Model Training
+
+Implemented training and prediction tasks:
+1. Load preprocessed dataset files (train, validate, test).
+2. Construct data structures by creating input sequences.
+3. Build LSTM Model using [TenserFlow Sequential](https://www.tensorflow.org/api_docs/python/tf/keras/Sequential):
+    - First [Input](https://www.tensorflow.org/api_docs/python/tf/keras/layers/InputLayer) layer.
+    - 4x [LSTM](https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM) layers: units = 100
+    - 4x [Dropout](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dropout) layers: rate = 0.2
+    - Final [Dense](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dense) layer with a single unit.
+4. Compile LSTM model:
+    - Optimizer: [Adam](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam)
+    - Loss: [Mean Squared Error](https://www.tensorflow.org/api_docs/python/tf/keras/losses/MeanSquaredError)
+5. Train LSTM model:
+    - Epochs: 200
+    - Batch size: 64
+
+### PHASE 4 - Model Inference and Predictions
+Yet to be updated.
 
 ## 📊 Model Performance
 Below is the loss curve observed during model training:
