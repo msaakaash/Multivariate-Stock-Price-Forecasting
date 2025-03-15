@@ -75,6 +75,11 @@ The raw, interim, and preprocessed datasets can be located in their correspondin
 - **Matplotlib** 📉
 - **FinBERT - Hugging Face**🤗
 
+## 📊 Model Performance
+Below is the loss curve observed during model training:
+
+![Epoch vs Loss](assets/epochVsLoss.png)
+
 
 ## 👥Development Team
 - `Aakaash M S`
