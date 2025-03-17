@@ -23,7 +23,7 @@ This project implements a time series multivariate analysis using RNN/LSTM for s
 
 
 ## 🛠️ Architectural Diagram  
-The following diagram represents the architecture of the stock price prediction model:  
+The following diagram represents the architecture of lstm:  
 
 ![LSTM Architecture Diagram](assets/architecture.png)
 
