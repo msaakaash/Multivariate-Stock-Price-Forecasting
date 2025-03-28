@@ -105,7 +105,19 @@ Implemented training and prediction tasks:
     - Batch size: 64
 
 ### PHASE 4 - Model Inference and Predictions
-Yet to be updated.
+
+Evaluate Model Performance:
+1. Computed evaluation metrics on the test dataset:
+    - **MAE (Mean Absolute Error)**: 0.8055  
+    - **RMSE (Root Mean Squared Error)**: 1.2090  
+    - **MAPE (Mean Absolute Percentage Error)**: 2.27%  
+    - **MASE (Mean Absolute Scaled Error)**: 1.4381  
+    - **SMAPE (Symmetric MAPE)**: 2.27%  
+    - **R² Score**: 0.9991
+2. Visualization of Predictions:
+    - **Actual vs Predicted Stock Prices** : Line plot comparing true stock prices vs. predicted values.
+    - **Residual Error Distribution** : Histogram or KDE plot of residual errors (actual - predicted).
+
 
 ## 📊 Model Performance
 Below is the loss curve observed during model training:
