@@ -13,7 +13,7 @@ This project implements a time series multivariate analysis using RNN/LSTM for s
 - [x] **Model Evaluation**: Assesses model performance using RMSE, MAE, and other key metrics.
 - [x] **Power BI Charts**: Visualizes stock trends and model predictions with interactive dashboards.
 - [ ] **Visualization (TensorBoard)**: Monitors training performance and helps in debugging.
-- [ ] **Deployment (TF Serving)**: Provides a scalable and production-ready model hosting solution.
+- [ ] **Deployment (TF Serving/AWS)**: Provides a scalable and production-ready model hosting solution.
 - [ ] **NLP Integration (FinBERT)**: Enhances predictions by incorporating financial sentiment analysis.
 
 
