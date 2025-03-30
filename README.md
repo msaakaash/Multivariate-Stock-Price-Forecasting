@@ -100,11 +100,16 @@ Evaluate Model Performance:
     - **Residual Error Distribution** : Histogram or KDE plot of residual errors (actual - predicted).
 
 
-## 📊 Model Performance
+## 🚀 Model Performance
 Below is the loss curve observed during model training:
 
 ![Epoch vs Loss](assets/epochVsLoss.png)
 
+## 📊 Visualization
+
+Insights from Actual vs. Predicted Open Price in Power BI.
+
+![Power BI Chart](assets/stockMarketForecasting.png)
 
 ## 👥Development Team
 - `Aakaash M S`
