@@ -111,6 +111,11 @@ Insights from Actual vs. Predicted Open Price in Power BI.
 
 ![Power BI Chart](assets/stockMarketForecasting.png)
 
+## Web Application
+
+The design of user interface
+![Frontend](assets/ui.png)
+
 ## 👥Development Team
 
 - `Aakaash M S`

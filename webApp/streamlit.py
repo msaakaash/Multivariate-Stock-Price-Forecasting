@@ -6,17 +6,20 @@ import gzip
 import joblib
 import numpy as np
 
+# Set Streamlit theme to dark
+st.set_page_config(page_title="Stock Price Prediction", layout="centered", initial_sidebar_state="collapsed")
+
 # Load the model with a custom object scope to handle Input and Policy
 with tf.keras.utils.custom_object_scope({'InputLayer': Input, 'DTypePolicy': Policy}):
-	model = tf.keras.models.load_model("C:/SKR006/Semester 6/Neural_Networks/project/Multivariate-Stock-Price-Forecasting/notebooks/lstm_stock_model.h5", compile=False)
+	model = tf.keras.models.load_model("notebooks/lstm_stock_model.h5", compile=False)
 
 
 # Load the scaler from the .gz file
-with gzip.open("C:/SKR006/Semester 6/Neural_Networks/project/Multivariate-Stock-Price-Forecasting/models/google_stock_price_scaler.gz", "rb") as f:
+with gzip.open("models/google_stock_price_scaler.gz", "rb") as f:
     scaler = joblib.load(f)
 
 st.title("Stock Price Prediction")
-
+# Set Streamlit theme to dark
 # Input fields for stock data
 open_price = st.number_input("Open Price:", value=0.0)
 high_price = st.number_input("High Price:", value=0.0)
