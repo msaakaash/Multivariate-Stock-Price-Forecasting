@@ -4,7 +4,7 @@ This project implements a time series multivariate analysis using RNN/LSTM for s
 
 ## 🏗️ High-Level Architecture
 
-![High-Level Architecture](assets/highlevel.jpg)
+![High-Level Architecture](assets/highLevel.png)
 
 ## 📌 Features Checklist
 
@@ -14,9 +14,8 @@ This project implements a time series multivariate analysis using RNN/LSTM for s
 - [x] **Model Evaluation**: Assesses model performance using RMSE, MAE, and other key metrics.
 - [x] **Power BI Charts**: Visualizes stock trends and model predictions with interactive dashboards.
 - [x] **Visualization (TensorBoard)**: Monitors training performance and helps in debugging.
-- [ ] **Deployment (TF Serving/AWS)**: Provides a scalable and production-ready model hosting solution.
+- [X] **Deployment (FastAPI/AWS)**: Provides a scalable and production-ready model hosting solution.
 - [x] **Web Application(StreamLit)**: User interface for prediction via user input.
-- [ ] **NLP Integration (FinBERT)**: Enhances predictions by incorporating financial sentiment analysis.
 
 ## 🌏 Potential Impact and Applications
 
@@ -43,6 +42,24 @@ The raw, interim, and preprocessed datasets can be located in their correspondin
 - **FinBERT - Hugging Face**🤗
 
 ## ⚒️ Project Workflow
+
+
+### PHASE 0 - Dataset Collection
+The dataset is sourced from Yahoo Finance:
+
+1. The dataset comprises daily stock prices of GOOG, including:
+   - Opening Price
+   - Highest Price
+   - Lowest Price
+   - Closing Price
+   - Adjusted Closing Price
+   - Trading Volume
+
+2. The dataset is organized into:
+   - Raw Data: Directly downloaded from Yahoo Finance
+   - Interim Data: Cleaned and formatted
+   - Preprocessed Data: Ready for model training
+
 
 ### PHASE 1 - Explanatory Data Analysis
 
@@ -98,6 +115,16 @@ Evaluate Model Performance:
 2. Visualization of Predictions:
    - **Actual vs Predicted Stock Prices** : Line plot comparing true stock prices vs. predicted values.
    - **Residual Error Distribution** : Histogram or KDE plot of residual errors (actual - predicted).
+
+### PHASE 5 - Visualization with TensorBoard
+1. Logging Training and Validation Metrics:
+   - Tracked loss and evaluation metrics (MAE, RMSE, MAPE, MASE, SMAPE, R² Score) during training.
+   - Logged using TensorFlow's tf.summary API for visualization in TensorBoard.
+
+### PHASE 6 - Deployment
+1. Deployment using FastAPI
+
+
 
 ## 🚀 Model Performance
 
