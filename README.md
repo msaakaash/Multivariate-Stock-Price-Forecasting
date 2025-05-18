@@ -1,12 +1,12 @@
-# 💹 Multivariate Stock Price Prediction - LSTM
+# Multivariate Stock Price Prediction - LSTM
 
 This project implements a time series multivariate analysis using RNN/LSTM for stock price predictions. A deep RNN model was created and trained on five years of historical Google stock price data to forecast the stock performance over a two-month period.
 
-## 🏗️ High-Level Architecture
+## High-Level Architecture
 
 ![High-Level Architecture](assets/highLevel.png)
 
-## 📌 Features Checklist
+## Features Checklist
 
 - [x] **Multivariate Analysis**: Uses multiple stock features (Open, High, Low, Close, Adjusted Close, Volume) for robust predictions.
 - [x] **LSTM-based Approach**: Leverages RNN/LSTM to model sequential dependencies in stock price data.
@@ -17,13 +17,13 @@ This project implements a time series multivariate analysis using RNN/LSTM for s
 - [X] **Deployment (FastAPI/AWS)**: Provides a scalable and production-ready model hosting solution.
 - [x] **Web Application(StreamLit)**: User interface for prediction via user input.
 
-## 🌏 Potential Impact and Applications
+## Potential Impact and Applications
 
 - **Investment Strategy Enhancement**: Empowers investors and financial analysts with AI-driven insights to optimize stock market decision-making.
 - **Advanced Risk Management in Trading**: Enables proactive identification of market trends and potential fluctuations, minimizing financial risks.
 - **Scalable & Production-Ready Deployment**: Easily deployable as a REST API for real-time, high-performance stock price prediction applications.
 
-## 📥 Data Set ([Google Stock Price](https://finance.yahoo.com/quote/GOOG/history))
+## Data Set ([Google Stock Price](https://finance.yahoo.com/quote/GOOG/history))
 
 The dataset utilized comprises historical records for the stock price of [Alphabet Inc. (GOOG)](https://finance.yahoo.com/quote/GOOG/history), captured on daily basis.
 
@@ -31,17 +31,17 @@ The dataset is sourced from [Yahoo Finance](https://finance.yahoo.com/) and cont
 
 The raw, interim, and preprocessed datasets can be located in their corresponding subfolders in the main data directory.
 
-## 👨🏾‍💻 Tech Stack
+## Tech Stack
 
-- **Python** 🐍
-- **TensorFlow/Keras** 🔥
+- **Python** 
+- **TensorFlow/Keras** 
 - **LSTM**
-- **NumPy & Pandas** 📊
+- **NumPy & Pandas** 
 - **TensorBoard**
-- **Matplotlib** 📉
+- **Matplotlib** 
 
 
-## ⚒️ Project Workflow
+## Project Workflow
 
 
 ### PHASE 0 - Dataset Collection
@@ -126,13 +126,13 @@ Evaluate Model Performance:
 
 
 
-## 🚀 Model Performance
+## Model Performance
 
 Below is the loss curve observed during model training:
 
 ![Epoch vs Loss](assets/epochVsLoss.png)
 
-## 📊 Visualization
+## Visualization
 
 Insights from Actual vs. Predicted Open Price in Power BI.
 
@@ -143,17 +143,17 @@ Insights from Actual vs. Predicted Open Price in Power BI.
 The design of user interface
 ![Frontend](assets/ui.png)
 
-## 👥Development Team
+## Development Team
 
 - `Aakaash M S`
 - `Karthik Ram S`
 - `Aniketha Prasad`
 - `Riya Rajesh`
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Feel free to fork the repository, work on new features, and submit pull requests.
 
-## 📝 License
+## License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE).
